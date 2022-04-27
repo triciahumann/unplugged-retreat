@@ -88,10 +88,11 @@ textarea {
    ========================================================================== */
 
 /******** Base Header - Footer Styles *********/
-
-@media and screen {max-width: 767px;
-  
+@media screen and (max-width: 767px) {
+html {
+  max-width: 100%;
 }
+
 header, 
 footer {
   display: flex;
@@ -100,27 +101,23 @@ footer {
   flex-flow: row wrap;
 }
 
-header {
-  display: flex;
-  
-}
-
 .content-wrapper {
   display: flex;
-  flex-direction: column;
 }
 
-header nav {
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list {
   display: flex;
 }
 
-header nav ul {
+.nav-list li {
   display: flex;
 }
 
-header nav ul li {
-  display: flex;
-}
 
 
 
@@ -128,56 +125,69 @@ header nav ul li {
 
 /* -------- Hero Area ---------*/
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
 .hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.content-wrapper {
+  display: flex;
+  width: 100%;
+
+}
+
+.content-wrapper h1 {
+}
+
+
+
+
+/* ---------- Main Aside/Form Section --------- */
+
+aside {
   display: flex;
 }
 
 .content-wrapper {
   display: flex;
-}
-
-.content-wrapper img {
-  display: flex;
-}
-
-/* ---------- Main Aside/Form Section --------- */
-
-aside {
-
-}
-
-aside .content-wrapper {
-
+  flex-wrap: wrap;
 }
 
 .form-description {
+ 
+}
 
+.form-description h2 {
+}
+.form-description p {
+  
 }
 
 .form {
-
+  
 }
 
 /* --------- Main: Features Section ---------- */
 
 .features {
-  display: flex;
+  
 }
 
 .content-wrapper {
-  display: flex;
-  align-content: center;
+  
 }
 
 .content-wrapper h2 {
-  display: flex;
-  justify-content: flex-start;
+ 
 }
 
 article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .fontawesome-icon {
@@ -191,20 +201,19 @@ article {
 /* ---------- Main: Review Section ----------- */
 
 .reviews {
-  display: flex;
 }
 
 .content-wrapper {
-  display: flex;
+  
 }
 
 .review-title {
-  display: flex;
-  justify-content: flex-start;
+  
 }
 
 .review-photo {
-
+  display: flex;
+  justify-content: center;
 }
 
 .review-subheading {
@@ -213,25 +222,35 @@ article {
 
 /********** End of Main Section Styles - Start of Footer *********/
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer-content {
-
+  display: flex;
  }
 
 .contact {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
  }
 
  .contact-info {
+   display: flex;
 
  }
 
  .social {
-
+  flex-direction: column;
  }
 
  .social-icons {
@@ -241,10 +260,11 @@ article {
  /* ----- Copyright Section ----- */
 
  .copyright {
-  display: flex;
+   display: flex;
+  
  }
 
-
+}
 
 
 /* ==========================================================================
