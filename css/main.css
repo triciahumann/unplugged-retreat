@@ -87,6 +87,166 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/******** Base Header - Footer Styles *********/
+
+@media and screen {max-width: 767px;
+  
+}
+header, 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header {
+  display: flex;
+  
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  display: flex;
+}
+
+
+
+/*********** Main Area Styles ************/
+
+/* -------- Hero Area ---------*/
+
+.hero-area {
+  display: flex;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.content-wrapper img {
+  display: flex;
+}
+
+/* ---------- Main Aside/Form Section --------- */
+
+aside {
+
+}
+
+aside .content-wrapper {
+
+}
+
+.form-description {
+
+}
+
+.form {
+
+}
+
+/* --------- Main: Features Section ---------- */
+
+.features {
+  display: flex;
+}
+
+.content-wrapper {
+  display: flex;
+  align-content: center;
+}
+
+.content-wrapper h2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fontawesome-icon {
+
+}
+
+.features-item-description {
+
+}
+
+/* ---------- Main: Review Section ----------- */
+
+.reviews {
+  display: flex;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.review-title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.review-photo {
+
+}
+
+.review-subheading {
+
+}
+
+/********** End of Main Section Styles - Start of Footer *********/
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content {
+
+ }
+
+.contact {
+
+ }
+
+ .contact-info {
+
+ }
+
+ .social {
+
+ }
+
+ .social-icons {
+
+ }
+
+ /* ----- Copyright Section ----- */
+
+ .copyright {
+  display: flex;
+ }
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
