@@ -89,10 +89,12 @@ textarea {
 
 /******** Base Header - Footer Styles *********/
 @media screen and (max-width: 767px) {
-html {
-  max-width: 100%;
-}
 
+
+.container {
+  width: 100%;
+  margin: 0;
+}
 header, 
 footer {
   display: flex;
@@ -101,13 +103,21 @@ footer {
   flex-flow: row wrap;
 }
 
-.content-wrapper {
+header {
   display: flex;
+}
+header .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-divider {
+  display: flex;
+  
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
 }
 
 .nav-list {
@@ -126,19 +136,14 @@ nav {
 /* -------- Hero Area ---------*/
 
 main {
-  display: flex;
-  flex-wrap: wrap;
+  
 }
 .hero-area {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 main.content-wrapper {
-  display: flex;
-  width: 100%;
-
+ 
 }
 
 .content-wrapper h1 {
@@ -155,7 +160,7 @@ aside {
 
 .content-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .form-description {
@@ -175,15 +180,23 @@ aside {
 /* --------- Main: Features Section ---------- */
 
 .features {
-  
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .content-wrapper {
-  
+  display: flex;
 }
 
 .content-wrapper h2 {
  
+}
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 article {
@@ -201,6 +214,7 @@ article {
 /* ---------- Main: Review Section ----------- */
 
 .reviews {
+  display: flex;
 }
 
 .content-wrapper {
@@ -223,44 +237,56 @@ article {
 /********** End of Main Section Styles - Start of Footer *********/
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /*---- Done with the header ----*/
 }
-.content-wrapper {
+footer.content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 .footer-content {
   display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
  }
 
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+ }
+
+address {
+  display: flex;
  }
 
  .contact-info {
    display: flex;
-
+   flex-direction: column;
+   align-items: center;
  }
 
  .social {
+  display: flex;
   flex-direction: column;
+  align-items: center;
  }
 
  .social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+ }
 
+ .social p {
+   display:flex;
  }
 
  /* ----- Copyright Section ----- */
 
  .copyright {
-   display: flex;
+  display: flex;
+  justify-content: center;
   
  }
 
