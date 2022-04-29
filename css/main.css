@@ -111,6 +111,16 @@ header .content-wrapper {
   flex-direction: column;
   align-items: center;
 }
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 60%;
+}
+
 .header-divider {
   display: flex;
   
@@ -235,6 +245,60 @@ article {
 }
 
 /********** End of Main Section Styles - Start of Footer *********/
+
+/* --------- ABOUT PAGE --------- */
+
+/*********** ABOUT: Mission Section *****/
+
+.mission {
+  display: flex;
+}
+
+main .mission .content-wrapper {
+  display: flex;
+}
+
+.mission-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.mission-content h2 {
+  margin: 0;
+}
+
+.mission-content p {
+  margin: 10;
+}
+
+/*********** ABOUT: Contact-Section *****/
+
+.contact-section {
+  display: flex;
+}
+
+.contact-section .content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+}
+
+.general-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.facilitator-chat {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------- FOOTER ---------- */
 
 footer {
   /*---- Done with the header ----*/
