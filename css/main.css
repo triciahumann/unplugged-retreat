@@ -87,20 +87,62 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* FONT INFO 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/ 
+
 /******** Base Header - Footer Styles *********/
 @media screen and (max-width: 767px) {
 
+html {
+  background: #202322;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  font-size: 1em;
+}
 
 .container {
   width: 100%;
-  margin: 0;
 }
+
+h1 {
+  color: #e2e3ed;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem;
+}
+
+h2 {
+  color: #e2e3ed;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875rem;
+}
+
+h3 {
+  color: #e2e3ed;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+}
+
+h4 {
+  color: #e2e3ed;
+}
+
+p {
+  color: #e2e3ed;
+  font-family: 'Open Sans', sans-serif;
+}
+
 header, 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #202322;
 }
 
 header {
@@ -108,7 +150,7 @@ header {
 }
 header .content-wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -119,23 +161,22 @@ a {
 }
 img {
   width: 60%;
+  margin-top: 20px;
 }
 
 .header-divider {
-  display: flex;
-  
+
 }
 
 nav {
-  display: flex;
+  width: 60%;
 }
 
-.nav-list {
+.nav-list li a {
   display: flex;
-}
-
-.nav-list li {
-  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
+  justify-content: space-around;
 }
 
 
@@ -145,32 +186,28 @@ nav {
 
 /* -------- Hero Area ---------*/
 
-main {
-  
-}
 .hero-area {
   display: flex;
+  background-image: url(../img/jake-melara-30679-unsplash.jpg);
 }
 
-main.content-wrapper {
- 
+.hero-area h1 {
+  width: 86%;
+  margin: 10px;
 }
-
-.content-wrapper h1 {
-}
-
-
-
 
 /* ---------- Main Aside/Form Section --------- */
 
 aside {
   display: flex;
+  background-color: #527158;
 }
 
 .content-wrapper {
   display: flex;
   flex-flow: row wrap;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .form-description {
@@ -180,22 +217,33 @@ aside {
 .form-description h2 {
 }
 .form-description p {
-  
+  margin: 0;
 }
 
 .form {
-  
+  width: 100%;
+  text-align: center;
 }
+
+form h3 {
+  text-align: left;
+}
+
+input, button {
+  background-color: #2a423a;
+}
+
 
 /* --------- Main: Features Section ---------- */
 
 .features {
   display: flex;
   flex-flow: row wrap;
+  background-image: url(../img/rawpixel-800820-unsplash1.jpg);
 }
 
 .content-wrapper {
-  display: flex;
+  
 }
 
 .content-wrapper h2 {
@@ -210,7 +258,7 @@ aside {
 }
 
 article {
-  
+  width: 55%;
 }
 
 .fontawesome-icon {
@@ -218,13 +266,14 @@ article {
 }
 
 .features-item-description {
-
+  text-align: center;
 }
 
 /* ---------- Main: Review Section ----------- */
 
 .reviews {
   display: flex;
+  background-color: #2a423a;
 }
 
 .content-wrapper {
@@ -240,9 +289,7 @@ article {
   justify-content: center;
 }
 
-.review-subheading {
 
-}
 
 /********** End of Main Section Styles - Start of Footer *********/
 
@@ -304,45 +351,43 @@ footer {
   /*---- Done with the header ----*/
 }
 footer.content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
-.footer-content {
-  display: flex;
-  flex-flow: row wrap;
-  flex-direction: column;
- }
-
+ 
 .contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+ }
+
+ .contact h4 {
+   margin-bottom: 0;
  }
 
 address {
   display: flex;
  }
 
- .contact-info {
+.contact-info {
    display: flex;
-   flex-direction: column;
+   justify-content: center;
    align-items: center;
  }
 
- .social {
+.social {
   display: flex;
   flex-direction: column;
   align-items: center;
  }
 
- .social-icons {
+.social-icons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
  }
 
- .social p {
+.social p {
    display:flex;
  }
 
@@ -351,7 +396,7 @@ address {
  .copyright {
   display: flex;
   justify-content: center;
-  
+  background-color: #202322;
  }
 
 }
