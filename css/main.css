@@ -135,6 +135,7 @@ h4 {
 p {
   color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
+  line-height: 18px;
 }
 
 a {
@@ -158,6 +159,7 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 a {
@@ -168,21 +170,27 @@ a {
 img {
   width: 60%;
   margin-top: 20px;
+  padding-bottom: 10px;
 }
 
 .header-divider {
-
+  border-top: #e2e3ed solid .5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
-  width: 60%;
+  display: flex;
+}
+
+ul.nav-list {
+  display: flex;
 }
 
 .nav-list li a {
-  display: flex;
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
-  justify-content: space-around;
 }
 
 
@@ -216,22 +224,16 @@ aside {
   margin-bottom: 20px;
 }
 
-.form-description {
- 
-}
-
-.form-description h2 {
-}
 .form-description p {
   margin: 0;
 }
 
 .form {
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
-form h3 {
+.form h3 {
   text-align: left;
 }
 
@@ -246,14 +248,6 @@ input, button {
   display: flex;
   flex-flow: row wrap;
   background-image: url(../img/rawpixel-800820-unsplash1.jpg);
-}
-
-.content-wrapper {
-  
-}
-
-.content-wrapper h2 {
- 
 }
 
 .features-items {
@@ -282,19 +276,10 @@ article {
   background-color: #2a423a;
 }
 
-.content-wrapper {
-  
-}
-
-.review-title {
-  
-}
-
 .review-photo {
   display: flex;
   justify-content: center;
 }
-
 
 
 /********** End of Main Section Styles - Start of Footer *********/
@@ -305,6 +290,8 @@ article {
 
 .mission {
   display: flex;
+  background-color: #527158;
+  padding-top: 10px;
 }
 
 main .mission .content-wrapper {
@@ -329,6 +316,7 @@ main .mission .content-wrapper {
 
 .contact-section {
   display: flex;
+  background-color: #2a423a;
 }
 
 .contact-section .content-wrapper {
@@ -381,6 +369,10 @@ address {
    align-items: center;
  }
 
+ .contact-info p {
+   text-align: center;
+ }
+
 .social {
   display: flex;
   flex-direction: column;
@@ -394,7 +386,7 @@ address {
  }
 
 .social p {
-   display:flex;
+   display: flex;
  }
 
  /* ----- Copyright Section ----- */
@@ -407,6 +399,23 @@ address {
 
 }
 
+/****************** Tablet Size *****************/
+
+@media screen 
+and (min-width: 768px) 
+and (max-width: 1199px)
+ {
+
+ }
+
+
+
+
+ /********************* Desktop ***********************/
+@media screen and (min-width: 1200px)
+{
+
+}
 
 /* ==========================================================================
    Helper classes
