@@ -93,7 +93,6 @@ font-family: 'Poppins', sans-serif;
 */ 
 
 /******** Base Header - Footer Styles *********/
-@media screen and (max-width: 767px) {
 
 html {
   background: #202322;
@@ -135,12 +134,16 @@ h4 {
 p {
   color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
+  font-size: .875rem;
   line-height: 18px;
 }
 
 a {
   color: #e2e3ed;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 header, 
@@ -237,8 +240,20 @@ aside {
   text-align: left;
 }
 
-input, button {
+input[type=text] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #9d9ea4;
+  padding-left: 15px;
+}
+
+input[type=button] {
   background-color: #2a423a;
+  color: #e2e3ed;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
 
@@ -257,7 +272,7 @@ input, button {
   flex-flow: row wrap;
 }
 
-article {
+.features-items article {
   width: 55%;
 }
 
@@ -276,13 +291,31 @@ article {
   background-color: #2a423a;
 }
 
+.reviews article {
+  width: 88%;
+}
+
 .review-photo {
   display: flex;
   justify-content: center;
 }
 
+/********** END OF HOME PAGE *********/
 
-/********** End of Main Section Styles - Start of Footer *********/
+/* --------- FAQ PAGE ----------- */
+
+.faq {
+  background-color: #527158;
+}
+
+.faq-content {
+  padding-top: 20px;
+}
+
+.faq-items article {
+  width: 95%;
+  padding-bottom: 10px;
+}
 
 /* --------- ABOUT PAGE --------- */
 
@@ -334,19 +367,27 @@ address {
   flex-direction: column;
 }
 
+.general-information h3 {
+  font-style:normal;
+}
+
+.general-information p {
+  font-style: normal;
+}
+
 .facilitator-chat {
   display: flex;
   flex-direction: column;
 }
 
-/* --------- FOOTER ---------- */
+.facilitator-chat h3 {
+  font-style: normal;
+}
 
-footer {
-  /*---- Done with the header ----*/
+.facilitator-chat p {
+  font-style: normal;
 }
-footer.content-wrapper {
-  
-}
+/* --------- FOOTER ---------- */
  
 .contact {
   display: flex;
@@ -358,6 +399,10 @@ footer.content-wrapper {
  .contact h4 {
    margin-bottom: 0;
  }
+
+.contact p {
+  font-style: normal;
+}
 
 address {
   display: flex;
@@ -389,6 +434,10 @@ address {
    display: flex;
  }
 
+ .social-icons p a {
+   font-weight: 500;
+ }
+
  /* ----- Copyright Section ----- */
 
  .copyright {
@@ -396,26 +445,6 @@ address {
   justify-content: center;
   background-color: #202322;
  }
-
-}
-
-/****************** Tablet Size *****************/
-
-@media screen 
-and (min-width: 768px) 
-and (max-width: 1199px)
- {
-
- }
-
-
-
-
- /********************* Desktop ***********************/
-@media screen and (min-width: 1200px)
-{
-
-}
 
 /* ==========================================================================
    Helper classes
@@ -505,15 +534,65 @@ and (max-width: 1199px)
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+    /*Tablet styles here*/
+
+html {
+  display: flex;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+header .content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-divider {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav .nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-wrapper h1 {
+  width: 70%;
+}
+
+aside .content-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.form-description {
+  width: 35%;
+}
+
+.form {
+  width: 35%;
+}
+
+input {
+  width: 100%;
+}
+ 
+@media screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+
 }
 
 /* ==========================================================================
