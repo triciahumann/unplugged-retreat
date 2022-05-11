@@ -638,7 +638,7 @@ input {
   flex-direction: row;
 }
 
-    /* Footer */
+    /* Footer  - MAKE ALL FOOTER CHANGES HERE!! */
 
 footer {
   margin: 60px;
@@ -675,7 +675,6 @@ footer .content-wrapper {
   flex-flow: row nowrap;
   justify-content: center;
   justify-content: space-between;
-  
 }
 
 .mission-content p {
@@ -686,6 +685,36 @@ footer .content-wrapper {
   /* Contact section */
 .contact-section .content-wrapper {
   margin: 60px;
+}
+
+/* ==========================================================================
+   FAQ Page
+    ========================================================================== */
+
+.faq .content-wrapper {
+  margin: 0;
+}
+.faq-content {
+  margin: 60px;
+  padding: 0;
+}
+
+.faq-items {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.faq article {
+  flex-basis: 288px;
+  padding-bottom: 5px;
+}
+
+article h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
 }
 
 @media screen and (min-width: 1200px) {
