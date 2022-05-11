@@ -368,7 +368,7 @@ address {
 }
 
 .general-information h3 {
-  font-style:normal;
+  font-style: normal;
 }
 
 .general-information p {
@@ -537,9 +537,16 @@ address {
 @media screen and (min-width: 768px) {
     /*Tablet styles here*/
 
+/* ==========================================================================
+   Home Page
+    ========================================================================== */
+    
+   /* General styles */
 html {
   display: flex;
 }
+
+    /* Header styles */ 
 
 header .content-wrapper {
   display: flex;
@@ -553,8 +560,10 @@ header .content-wrapper {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border-top: none;
 }
 
+    /* Navigation styles */
 nav {
   display: flex;
 }
@@ -564,10 +573,12 @@ nav .nav-list {
   justify-content: space-around;
 }
 
+    /* Hero area */
 .content-wrapper h1 {
   width: 70%;
 }
 
+    /* Aside / Form */
 aside .content-wrapper {
   display: flex;
   flex-flow: row nowrap;
@@ -576,6 +587,7 @@ aside .content-wrapper {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 30px;
+  margin: 0;
 }
 
 .form-description {
@@ -589,6 +601,60 @@ aside .content-wrapper {
 input {
   width: 100%;
 }
+
+    /* Features */
+
+.features .content-wrapper {
+  margin: 60px;
+}
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.features-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.features-items article {
+  width: 40%;
+}
+
+    /* Review */
+
+.reviews .content-wrapper {
+  margin: 60px;
+}
+
+.review-title h2 {
+  width: 80%;
+}
+
+.reviews article {
+  display: flex;
+  flex-direction: row;
+}
+
+    /* Footer */
+
+footer {
+  margin: 60px;
+}
+footer .content-wrapper {
+  margin: 0;
+}
+
+.footer-content {
+  display: flex;
+}
+
+    /* Copyright */
+
+
+
  
 @media screen and (min-width: 1200px) {
     /*Desktop styles here*/
