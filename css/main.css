@@ -653,9 +653,41 @@ footer .content-wrapper {
 
     /* Copyright */
 
+/* ==========================================================================
+   About Page
+    ========================================================================== */
+  
+    /* Mission */
+.mission .content-wrapper {
+  margin: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.mission-content {
+  display: flex;
+  justify-content: center;
+}
 
- 
+.mission-details {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-content: space-between;
+  
+}
+
+.mission-content p {
+  flex-basis: 300px;
+  padding-top: 15px;
+}
+
+  /* Contact section */
+.contact-section .content-wrapper {
+  margin: 60px;
+}
+
 @media screen and (min-width: 1200px) {
     /*Desktop styles here*/
 
