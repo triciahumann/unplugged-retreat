@@ -92,7 +92,7 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */ 
 
-/******** Base Header - Footer Styles *********/
+/* General styles */
 
 html {
   background: #202322;
@@ -155,6 +155,8 @@ footer {
   background: #202322;
 }
 
+/* Header styles */
+
 header {
   display: flex;
 }
@@ -189,6 +191,7 @@ nav {
 
 ul.nav-list {
   display: flex;
+  padding: 0;
 }
 
 .nav-list li a {
@@ -568,9 +571,10 @@ nav {
   display: flex;
 }
 
-nav .nav-list {
+ul.nav-list {
   display: flex;
-  justify-content: space-around;
+  padding: 0;
+  
 }
 
     /* Hero area */
@@ -643,12 +647,16 @@ input {
 footer {
   margin: 60px;
 }
+
 footer .content-wrapper {
   margin: 0;
+  width: 100%;
 }
 
 .footer-content {
   display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
     /* Copyright */
@@ -678,13 +686,27 @@ footer .content-wrapper {
 }
 
 .mission-content p {
-  flex-basis: 300px;
+  width: 45%;
   padding-top: 15px;
 }
 
   /* Contact section */
 .contact-section .content-wrapper {
   margin: 60px;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 77%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-content h3 {
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
