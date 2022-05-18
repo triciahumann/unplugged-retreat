@@ -760,12 +760,58 @@ article h3 {
 @media screen and (min-width: 1200px) {
     /*Desktop styles here*/
 
-.features-items {
+    /* Header */
+img {
+  margin-left: 70px;
+}
+
+    /* Hero area */
+.content-wrapper h1 {
+  margin-left: 100px;
+}
+    /* Aside and Form */
+aside .content-wrapper {
   margin-left: 100px;
   margin-right: 100px;
 }
+
+.form-description .form {
+  max-width: 320px;
+}
+
+.form {
+  text-align: left;
+}
+input[type=text] {
+  padding: 0;
+  border: 0;
+  max-width: 320px;
+  height: 50px;
+}
+
+input[type=button] {
+  padding: 0;
+  border: 0;
+  max-width: 320px;
+  height: 50px;
+}
+
+    /* Features */
+.features .content-wrapper {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.features h2 {
+  margin-top: 40px;
+}
+.features-items {
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 860px;
+}
 .features-items article {
-  width: 26%;
+  max-width: 150px;
 }
 
     /* Review */
