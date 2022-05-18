@@ -92,7 +92,7 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */ 
 
-/* General styles */
+/* Mobile first general styles */
 
 html {
   background: #202322;
@@ -137,6 +137,14 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-size: .875rem;
   line-height: 18px;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 a {
@@ -204,9 +212,6 @@ ul.nav-list {
   color: #e2e3ed;
 }
 
-
-
-
 /*********** Main Area Styles ************/
 
 /* -------- Hero Area ---------*/
@@ -214,6 +219,9 @@ ul.nav-list {
 .hero-area {
   display: flex;
   background-image: url(../img/jake-melara-30679-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-area h1 {
@@ -254,6 +262,10 @@ input[type=text] {
   font-style: italic;
   color: #9d9ea4;
   padding-left: 15px;
+  width: 295px;
+  height: 50px;
+  border: 0;
+  margin-bottom: 20px;
 }
 
 input[type=button] {
@@ -262,6 +274,10 @@ input[type=button] {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
   text-transform: uppercase;
+  width: 310px;
+  height: 50px;
+  border: 0;
+  padding: 0;
 }
 
 
@@ -270,7 +286,11 @@ input[type=button] {
 .features {
   display: flex;
   flex-flow: row wrap;
-  background-image: url(../img/rawpixel-800820-unsplash1.jpg);
+}
+
+.features .content-wrapper {
+  background-image: url(../img/rawpixel-800820-unsplash1.png) center no-repeat;
+  background-size: cover;
 }
 
 .features-items {
