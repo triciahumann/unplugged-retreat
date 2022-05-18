@@ -202,7 +202,7 @@ nav {
 
 ul.nav-list {
   display: flex;
-  width: 30%;
+  width: 45%;
   justify-content: space-around;
   padding: 0;
 }
@@ -218,10 +218,8 @@ ul.nav-list {
 
 .hero-area {
   display: flex;
-  background-image: url(../img/jake-melara-30679-unsplash.jpg);
+  background: url(../img/jake-melara-30679-unsplash.jpg) center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .hero-area h1 {
@@ -243,13 +241,15 @@ aside {
   margin-bottom: 20px;
 }
 
+aside h3 {
+  margin-bottom: 15px;
+}
 .form-description p {
   margin: 0;
 }
 
 .form {
   text-align: center;
-  width: 100%;
 }
 
 .form h3 {
@@ -286,12 +286,11 @@ input[type=button] {
 .features {
   display: flex;
   flex-flow: row wrap;
-}
-
-.features .content-wrapper {
-  background-image: url(../img/rawpixel-800820-unsplash1.png) center no-repeat;
+  background: url(../img/rawpixel-800820-unsplash1.jpg) center no-repeat;
   background-size: cover;
 }
+
+
 
 .features-items {
   display: flex;
@@ -319,14 +318,18 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-.reviews article {
-  width: 88%;
+.reviews .content-wrapper {
+  margin: 20px;
 }
 
-.review-photo {
-  display: flex;
-  justify-content: center;
+.review-title h2{
+  margin-bottom: 0;
 }
+
+.review-photo figure img {
+  width: 100%;
+}
+ 
 
 /********** END OF HOME PAGE *********/
 
