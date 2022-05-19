@@ -745,6 +745,12 @@ footer .content-wrapper {
   padding-top: 15px;
 }
 
+  /* Map */
+
+  .map figure {
+    padding-bottom: 45%;
+  }
+
   /* Contact section */
 .contact-section .content-wrapper {
   margin: 60px;
@@ -883,7 +889,13 @@ input[type=button] {
 /* ==========================================================================
    About Page
     ========================================================================== */
+ 
+    /* Map */
+    .map figure {
+      padding-bottom: 37%;
+    }
 
+  /* Contact */
     .contact-section {
       width: 100%;
     }
