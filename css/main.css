@@ -290,8 +290,6 @@ input[type=button] {
   background-size: cover;
 }
 
-
-
 .features-items {
   display: flex;
   justify-content: center;
@@ -303,8 +301,14 @@ input[type=button] {
   width: 55%;
 }
 
-.fontawesome-icon {
+.features-items p {
+  display: flex;
+  justify-content: center;
+}
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features-item-description {
@@ -670,7 +674,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 .features-items {
@@ -680,6 +684,10 @@ input {
 
 .features-items article {
   width: 40%;
+}
+
+.fontawesome-icon {
+  margin-bottom: 0;
 }
 
     /* Review */
