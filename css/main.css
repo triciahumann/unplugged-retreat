@@ -155,8 +155,11 @@ a {
   font-weight: 700;
 }
 
-header, 
-footer {
+
+
+/* Header styles */
+
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,24 +167,22 @@ footer {
   background: #202322;
 }
 
-/* Header styles */
-
-header {
-  display: flex;
-}
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-}
+  flex-flow: row wrap;
+  }
 
 a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-img {
+header img {
+  display: flex;
+  justify-content: center;
   width: 60%;
   margin-top: 20px;
   padding-bottom: 10px;
@@ -234,7 +235,7 @@ aside {
   background-color: #527158;
 }
 
-.content-wrapper {
+aside .content-wrapper {
   display: flex;
   flex-flow: row wrap;
   margin-left: 20px;
@@ -290,6 +291,10 @@ input[type=button] {
   background-size: cover;
 }
 
+.features .content-wrapper h2 {
+  margin: 20px;
+}
+
 .features-items {
   display: flex;
   justify-content: center;
@@ -333,8 +338,22 @@ input[type=button] {
 .review-photo figure img {
   width: 100%;
 }
- 
 
+/* Footer */
+
+footer .social-icons {
+  width: 250px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+footer .social-icons p {
+  width: 100%;
+  justify-content: center;
+  background: url(../img/circle-button-transparent.png) center no-repeat;
+  background border-radius: 50px;
+  
+}
 /********** END OF HOME PAGE *********/
 
 /* --------- FAQ PAGE ----------- */
