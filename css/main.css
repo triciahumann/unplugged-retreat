@@ -421,16 +421,16 @@ footer .social-icons a {
 
 /* --------- ABOUT PAGE --------- */
 
-/*********** ABOUT: Mission Section *****/
+/* Mission */
 
 .mission {
   display: flex;
   background-color: #527158;
-  padding-top: 10px;
 }
 
 main .mission .content-wrapper {
   display: flex;
+  margin: 50px 20px 50px;
 }
 
 .mission-content {
@@ -441,11 +441,14 @@ main .mission .content-wrapper {
 
 .mission-content h2 {
   margin: 0;
+  padding-bottom: 5px;
 }
 
 .mission-content p {
   margin: 10;
 }
+
+/* Map */
 
 .map figure {
   width: 100%;
@@ -463,7 +466,7 @@ main .mission .content-wrapper {
   left: 0;
 }
 
-/*********** ABOUT: Contact-Section *****/
+/* Contact */
 
 .contact-section {
   display: flex;
@@ -473,6 +476,11 @@ main .mission .content-wrapper {
 .contact-section .content-wrapper {
   display: flex;
   flex-direction: column;
+  margin: 50px 20px 50px;
+}
+
+.contact-section h3 {
+  margin: 0;
 }
 
 address {
@@ -480,17 +488,23 @@ address {
   flex-direction: column;
 }
 
+.contact-content h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .general-information {
   display: flex;
   flex-direction: column;
 }
 
-.general-information h3 {
+.general-information h4 {
   font-style: normal;
 }
 
 .general-information p {
   font-style: normal;
+  margin: 0;
 }
 
 .facilitator-chat {
@@ -498,12 +512,13 @@ address {
   flex-direction: column;
 }
 
-.facilitator-chat h3 {
+.facilitator-chat h4 {
   font-style: normal;
 }
 
 .facilitator-chat p {
   font-style: normal;
+  margin: 0;
 }
 /* --------- FOOTER ---------- */
  
