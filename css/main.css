@@ -195,6 +195,8 @@ header img {
   justify-content: center;
 }
 
+/* Navigation */
+
 nav {
   display: flex;
   width: 100%;
@@ -203,8 +205,8 @@ nav {
 
 ul.nav-list {
   display: flex;
-  width: 45%;
-  justify-content: space-between;
+  width: 57%;
+  justify-content: space-around;
   padding: 0;
 }
 
@@ -690,6 +692,10 @@ header .content-wrapper {
   width: 100%;
 }
 
+header img {
+  margin-top: 10px;
+}
+
 .header-divider {
   display: flex;
   align-items: center;
@@ -715,6 +721,7 @@ ul.nav-list {
     /* Hero area */
 .content-wrapper h1 {
   width: 70%;
+  margin-left: 64px;
 }
 
     /* Aside / Form */
@@ -738,10 +745,13 @@ aside .content-wrapper {
   width: 35%;
 }
 
-input {
-  width: 100%;
+input[type=text] {
+  width: 94%;
 }
 
+input[type=button] {
+  width: 100%;
+}
     /* Features */
 
 .features .content-wrapper {
@@ -766,11 +776,16 @@ input {
 }
 
 .features-items article {
-  width: 40%;
+  width: 34%;
+  flex-direction: column;
 }
 
-.fontawesome-icon {
-  margin-bottom: 0;
+p.fontawesome-icon {
+  margin-top: 25px;
+}
+
+p.features-item-description {
+  width: 170px;
 }
 
     /* Review */
@@ -788,7 +803,7 @@ input {
   flex-direction: row;
 }
 
-    /* Footer  - MAKE ALL FOOTER CHANGES HERE!! */
+    /* Footer */
 
 footer {
   margin: 60px;
@@ -803,6 +818,26 @@ footer .content-wrapper {
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.contact h3 {
+  margin-top: 0;
+}
+.social h3 {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.social-icons p a {
+  margin-bottom: 0;
 }
 
     /* Copyright */
