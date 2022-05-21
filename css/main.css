@@ -757,10 +757,13 @@ input[type=button] {
 .features .content-wrapper {
   margin: 60px;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .features h2 {
-  width: 75%;
+  width: 100%;
 }
 
 .features article {
@@ -773,6 +776,7 @@ input[type=button] {
 .features-items {
   display: flex;
   justify-content: space-around;
+  width: 640px;
 }
 
 .features-items article {
@@ -820,17 +824,24 @@ footer .content-wrapper {
   justify-content: space-around;
 }
 
-.social {
+.contact {
+  width: 25%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  width: 50%;
 }
 
 .contact h3 {
   margin-top: 0;
 }
+
+.social {
+  width: 25%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+} 
+
 .social h3 {
   margin-bottom: 20px;
   margin-top: 0;
@@ -847,6 +858,7 @@ footer .content-wrapper {
     ========================================================================== */
   
     /* Mission */
+
 .mission .content-wrapper {
   margin: 66px;
   display: flex;
@@ -931,14 +943,22 @@ article h3 {
 @media screen and (min-width: 1200px) {
     /*Desktop styles here*/
 
+p {
+  font-size: 1.125rem;
+  line-height: 24px;
+}
     /* Header */
 img {
   margin-left: 70px;
 }
 
+ul.nav-list {
+  width: 25%;
+}
+
     /* Hero area */
 .content-wrapper h1 {
-  margin-left: 100px;
+  margin-left: 120px;
 }
     /* Aside and Form */
 aside .content-wrapper {
@@ -946,7 +966,8 @@ aside .content-wrapper {
   margin-right: 100px;
 }
 
-.form-description .form {
+.form-description,
+.form {
   max-width: 320px;
 }
 
@@ -955,8 +976,9 @@ aside .content-wrapper {
 }
 input[type=text] {
   padding: 0;
+  padding-left: 15px;
   border: 0;
-  max-width: 320px;
+  width: 305px;
   height: 50px;
 }
 
@@ -973,10 +995,12 @@ input[type=button] {
   margin-right: 120px;
 }
 
-.features h2 {
+.features .content-wrapper h2 {
   margin-top: 40px;
   width: 890px;
+  margin-bottom: 70px;
 }
+
 .features-items {
   margin-left: 100px;
   margin-right: 100px;
