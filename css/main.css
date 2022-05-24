@@ -812,12 +812,7 @@ article .review-subheading h4 {
 
     /* Footer */
 
-footer {
-  margin: 60px;
-}
-
 footer .content-wrapper {
-  margin: 0;
   width: 100%;
 }
 
@@ -874,6 +869,10 @@ footer .content-wrapper {
   justify-content: center;
 }
 
+.mission-content h2 {
+  width: 97%;
+}
+
 .mission-details {
   display: flex;
   flex-flow: row nowrap;
@@ -915,8 +914,8 @@ footer .content-wrapper {
 
 .faq-content h2 {
   margin: 0;
-  font-size: 1.875rem;
-  width: 50%;
+  font-size: 2.25rem;
+  width: 90%;
 }
 
 .faq-items {
@@ -927,21 +926,25 @@ footer .content-wrapper {
 }
 
 .faq-items article {
-  flex-basis: 45%;
+  flex-basis: 47%;
 }
 
 .faq-items article h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125rem;
+  font-size: .875rem;
   line-height: 1.5rem;
   margin-bottom: 20px;
 }
-
 
 .faq-item-description {
   margin: 0;
 }
 
+/* Footer */
+.contact h3,
+.social h3 {
+  margin-bottom: 40px;
+}
 
 /**** DESKTOP STYLES ****/
 @media screen and (min-width: 1200px) {
@@ -951,6 +954,7 @@ footer .content-wrapper {
 
 .content-wrapper {
   max-width: 960px;
+  margin: 100px 0;
 }
 
 p {
@@ -962,6 +966,7 @@ p {
 
 ul.nav-list {
   width: 25%;
+  margin: 0;
 }
 
     /* Hero area */
@@ -983,6 +988,7 @@ aside .content-wrapper {
 .form h3,
 .form-description h3 {
   font-size: 1.875rem;
+  margin-bottom: 20px;
 }
 
 input[type=text] {
@@ -1001,7 +1007,7 @@ input[type=button] {
 }
 
 .features .content-wrapper h2 {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   width: 90%;
 }
 
@@ -1018,79 +1024,100 @@ input[type=button] {
 
 .features-item-description {
   width: 170px;
-  margin-bottom: 45px;
+  margin: 0;
 }
 
     /* Review */
 
 .review-title h2 {
   font-size: 2.25rem;
+  margin-bottom: 100px;
 }
 
 .review-subheading {
   padding-left: 35px;
 }
 
-.review-subheading h4 {
+article .review-subheading h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875rem;
 }
 
     /* Footer */
 
-    .contact,
-    .social {
-      width: 30%;
-    }
+.contact,
+.social {
+  width: 30%;
+}
+
+.contact h3,
+.social h3 {
+  font-size: 1.875rem;
+}
 
 /* ==========================================================================
    FAQ Page
     ========================================================================== */
   
-.faq-content {
-  margin: 100px;
-}
+
 
 .faq-content h2 {
+  font-size: 3rem;
   margin-top: 0;
 }
 .faq-items article {
   flex-basis: 450px;
 }
 
-.faq-question {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.faq-items article h4  {
+  font-size: 1.125rem;
+  margin-top: 40px;
 }
 
 /* ==========================================================================
    About Page
     ========================================================================== */
- 
+    /* Mission */
+
+  .mission-content h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    width:100%;
+  }
+  
+  .mission-content p {
+    margin:0;
+    padding: 0;
+  }
     /* Map */
-    .map figure {
-      padding-bottom: 37%;
-    }
+  .map figure {
+    padding-bottom: 37%;
+  }
 
-  /* Contact */
-    .contact-section {
-      width: 100%;
-    }
+    /* Contact */
 
-    .contact-section .content-wrapper {
-      width: 100%;
-      justify-content: space-around;
-      margin: 100px;
-    }
+  .contact-section {
+    width: 100%;
+  }
 
-    .contact-section h2 {
-      margin: 0;
-    }
+  .contact-section .content-wrapper {
+    width: 100%;
+    justify-content: space-around;
+  }
 
-    .contact-content {
-      justify-content: space-around;
-    }
-    
+  .contact-section .content-wrapper h3 {
+    margin: 0;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .contact-content {
+    justify-content: space-between;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875rem;
+  }
 }
 
 /* ==========================================================================
